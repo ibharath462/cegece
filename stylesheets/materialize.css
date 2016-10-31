@@ -2159,6 +2159,9 @@ html {
  */
 body {
   margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /* HTML5 display definitions
@@ -2177,12 +2180,18 @@ figure,
 footer,
 header,
 hgroup,
-main,
 menu,
 nav,
 section,
 summary {
   display: block;
+}
+
+main {
+
+  flex: 1 0 auto;
+  display: block;
+
 }
 
 /**
@@ -6994,6 +7003,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 500;
   line-height: 48px;
 }
+
 
 .side-nav .subheader:hover {
   background-color: transparent;
